@@ -1,0 +1,196 @@
+huatuo-chat: # the public version on HF 
+    model_id: "huatuo-chat"
+    load:
+        config_dir: "huatuogpt_7b"
+        device: 'cuda'        
+        precision: 'fp16'
+    generation_config: 
+        max_new_tokens: 128     
+        min_new_tokens: 1          
+        do_sample: True
+        temperature: 0.5
+        top_k: 5
+        top_p: 0.85
+        repetition_penalty: 1.05
+
+doctorglm:
+    model_id: 'doctorglm'
+    load:
+        config_dir: chatglm-6b
+        prefix_config_dir: pytorch_model.bin
+        device: 'cuda'        
+        precision: 'fp16'
+    generation_config: 
+        max_new_tokens: 128     
+        min_new_tokens: 1      
+        do_sample: True
+        temperature: 0.3
+        top_k: 5
+        top_p: 0.85
+        repetition_penalty: 1.05         
+
+
+
+bentsao:
+    model_id: "bentsao"
+    load:
+        llama_dir: "llama_hf_7b" # huggingface llama
+        lora_dir: "lora-llama-med"
+        device: 'cuda'        
+        precision: 'fp16'
+    generation_config: 
+        max_new_tokens: 128     
+        min_new_tokens: 1          
+        do_sample: True
+        temperature: 0.3    
+        top_k: 5
+        top_p: 0.85
+        repetition_penalty: 1.05 
+
+
+bianque-v2:
+    model_id: 'bianque-v2'
+    load:
+        config_dir: "bianque-2"
+        device: 'cuda'          # ['cuda', 'cpu', 'mps']
+        precision: 'fp16'
+    generation_config: # pass any huggingface generation configs here
+        max_new_tokens: 128     
+        min_new_tokens: 1          
+        do_sample: True
+        temperature: 0.3
+        top_k: 5
+        top_p: 0.85
+        repetition_penalty: 1.05         
+
+
+
+chatglm-med:
+    model_id: 'chatglm-med'
+    load:
+        config_dir: "ChatGLM-Med"
+        device: 'cuda'        
+        precision: 'fp16'
+    generation_config: 
+        max_new_tokens: 128     
+        min_new_tokens: 1          
+        do_sample: True
+        temperature: 0.3
+        top_k: 5
+        top_p: 0.85
+        repetition_penalty: 1.05         
+
+chatglm2:
+    model_id: 'chatglm2'
+    load:
+        config_dir: "chatglm2-6b"
+        device: 'cuda'        
+        precision: 'fp16'
+    generation_config: 
+        max_new_tokens: 128     
+        min_new_tokens: 1          
+        do_sample: True    
+        temperature: 0.3
+        top_k: 5
+        top_p: 0.85
+        repetition_penalty: 1.05  
+
+
+qizhen-cama-13b: # qizhen-13b
+    model_id: 'qizhen-cama-13b'
+    load:
+        llama_dir: "zhixi-13b"
+        lora_dir: "qizhen-lora"
+        device: 'cuda'        
+        precision: 'fp16'
+    generation_config: 
+        max_new_tokens: 128     
+        min_new_tokens: 1          
+        do_sample: False
+        # temperature: 0.3
+        # top_k: 5
+        # top_p: 0.85
+        # repetition_penalty: 1.05         
+
+
+
+chatmed-consult:
+    model_id: 'chatmed-consult'
+    load:
+        llama_dir: "chinese-llama-alpaca-plus-lora-7b" # huggingface llama
+        lora_dir: "chatmed-consult"
+        device: 'cuda'        
+        precision: 'fp16'
+    generation_config: 
+        max_new_tokens: 128     
+        min_new_tokens: 1          
+        do_sample: True
+        temperature: 0.3
+        top_k: 5
+        top_p: 0.85
+        repetition_penalty: 1.05         
+
+
+
+medicalgpt:
+    model_id: 'medicalgpt'
+    load:
+        config_dir: "medicalgpt"
+        device: 'cuda'        
+        precision: 'fp16'
+    generation_config: 
+        max_new_tokens: 128     
+        min_new_tokens: 1          
+        do_sample: True
+        temperature: 0.3
+        top_k: 5
+        top_p: 0.85
+        repetition_penalty: 1.05         
+
+baichuan-13b-chat:
+    model_id: 'baichuan-13b-chat'
+    load:
+        config_dir: "baichuan-13b-chat"
+        device: 'cuda'        
+        precision: 'fp16'
+    generation_config: 
+        max_new_tokens: 128     
+        min_new_tokens: 1          
+        do_sample: True
+        temperature: 0.3
+        top_k: 5
+        top_p: 0.85
+        repetition_penalty: 1.05    
+
+
+
+baichuan2-13b-chat:
+    model_id: 'baichuan2-13b-chat'
+    load:
+        config_dir: "Baichuan2-13B-Chat"
+        device: 'cuda'        
+        precision: 'fp16'
+    generation_config: 
+        max_new_tokens: 128     
+        min_new_tokens: 1          
+        do_sample: True
+        temperature: 0.3
+        top_k: 5
+        top_p: 0.85
+        repetition_penalty: 1.05    
+
+
+baichuan2-7b-chat:
+    model_id: 'baichuan2-7b-chat'
+    load:
+        config_dir: "Baichuan2-7B-Chat/"
+        device: 'cuda'        
+        precision: 'fp16'
+    generation_config: 
+        max_new_tokens: 128     
+        min_new_tokens: 1          
+        do_sample: True
+        temperature: 0.3
+        top_k: 5
+        top_p: 0.85
+        repetition_penalty: 1.05    
