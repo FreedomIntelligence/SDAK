@@ -45,7 +45,7 @@ We design a comprehensive evaluation metric. It comprises three cascading indica
 
 Please refer to [tech report](https://arxiv.org/abs/2310.11722) for more analysis results.
 
-# Data Format of Benchmark
+# 📋Data Format of Benchmark
 Each knowledge item consists of a pair of factual and counterfactual claims and the data format is as follows. 
 
     {"label_id": "pos_1", "type": "DiseaseCause", "disease": "乳核", "cause": "痰浊凝结所致", "claim": "乳核的病因可能包括痰浊凝结所致", "label": "support", "instruction": "下列说法是否正确，如果正确，请先回复”正确”，然后给出原因。如果错误，请先回复“错误”，然后给出原因。\n\n乳核的病因可能包括痰浊凝结所致", "input": "", "output": "", "id": 0}
@@ -55,9 +55,17 @@ $label\_id = pos\_i$ indicates the claim is factual and $label\_id = neg\_i$ ind
 
 type means the type of the atomic knowledge item.
 
-# Run
+# 🚀How to Run
     # generate results
     cd code
     sbatch run.sh
     # evaluation 
     python evaluate.py
+
+
+# 📩 Contact
+If you have any question, please feel free to [email](yxfansuda@stu.suda.edu.cn) me. 
+# 😀Acknowledgement
+Our code is modified on [CMB](https://github.com/FreedomIntelligence/CMB), thanks for their amazing contribution!!!
+
+
