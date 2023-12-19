@@ -51,9 +51,8 @@ Each knowledge item consists of a pair of factual and counterfactual claims and 
     {"label_id": "pos_1", "type": "DiseaseCause", "disease": "乳核", "cause": "痰浊凝结所致", "claim": "乳核的病因可能包括痰浊凝结所致", "label": "support", "instruction": "下列说法是否正确，如果正确，请先回复”正确”，然后给出原因。如果错误，请先回复“错误”，然后给出原因。\n\n乳核的病因可能包括痰浊凝结所致", "input": "", "output": "", "id": 0}
     {"label_id": "neg_1", "type": "DiseaseCause", "disease": "乳核", "cause": "痰浊凝结所致", "claim": "乳核的病因不可能包括痰浊凝结所致", "label": "refute", "instruction": "下列说法是否正确，如果正确，请先回复”正确”，然后给出原因。如果错误，请先回复“错误”，然后给出原因。\n\n乳核的病因不可能包括痰浊凝结所致", "input": "", "output": "", "id": 1}
 
-$label\_id = pos\_i$ indicates the claim is factual and $label\_id = neg\_i$ indicates the claim is counterfactual.
+$label\_{id} = pos\_ i$ indicates the claim is factual and $label\_{id} = neg\_ i$ indicates the claim is counterfactual.
 
-type means the type of the atomic knowledge item.
 
 # 🚀How to Run
     # generate results
