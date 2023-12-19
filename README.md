@@ -64,7 +64,8 @@ type means the type of the atomic knowledge item.
 
 
 # 📩 Contact
-If you have any question, please feel free to [email](yxfansuda@stu.suda.edu.cn) me. 
+If you have any questions, please feel free to [email](yxfansuda@stu.suda.edu.cn) me. 
+
 # 😀Acknowledgement
 Our code is modified on [CMB](https://github.com/FreedomIntelligence/CMB), thanks for their amazing contribution!!!
 
