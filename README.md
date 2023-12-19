@@ -23,7 +23,7 @@ We conducted thematic analysis of 200 samples randomly selected from each intent
 After obtaining the most common atomic types, we construct pairs of factual and counterfactual claims for each atomic type to convey atomic knowledge items. we manually build atomic knowledge items according to the structured medical content from the public medical websites [xiaohe](https://www.xiaohe.cn/medical) [120ask](https://www.120ask.com/.disease/).
 ## Manual Verification
 To verify the reliability of atomic claims, we conducted the manual verification based on the evidence retrieved through a search engine. We
-first randomly selected 50 factual claims for each atomic type. Then, we follow the [previous work](https://arxiv.org/abs/2307.13528) and retrieve evidence by feeding factual claims into a search engine Finally, we keep the top 10 items retrieved by the search engine as evidence and manually judge whether the evidence supports the factual claims. 
+first randomly selected 50 factual claims for each atomic type. Then, we follow the [previous work](https://arxiv.org/abs/2307.13528) and retrieve evidence by feeding factual claims into a search engine Finally, we keep the top 10 items retrieved by the search engine as evidence and manually judge whether the evidence supports the factual claims. 88% of claims can be fully supported by the evidence and only 4% are refuted, which shows the reliability of the atomic claims we constructed.
 
 # 📏Evaluation Process
 ![](./assets/EvaluationProcess.png)
