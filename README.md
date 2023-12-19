@@ -1,7 +1,7 @@
-# The repo for Quantifying Atomic Knowledge in Self-Diagnosis for Chinese Medical LLMs
+# The repository for Quantifying Atomic Knowledge in Self-Diagnosis for Chinese Medical LLMs
 
 # ✨ Latest News
-*   [12/19/2023]: Release the [benchmark](https://github.com/FreedomIntelligence/SDAK/SDAK).
+*   [12/19/2023]: Release the [benchmark](https://github.com/FreedomIntelligence/SDAK/SDAK.jsonl).
 *   [10/18/2023]: Release the [tech report](https://arxiv.org/abs/2310.11722).
 
 
