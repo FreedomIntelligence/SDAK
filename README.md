@@ -20,7 +20,7 @@ The construction of the SDAK benchmark mainly includes three steps.
 ## Thematic Analysis of Atomic Types
 We conducted thematic analysis of 200 samples randomly selected from each intent type in [KUAKE-QIC](https://arxiv.org/pdf/2106.08087) to identify the atomic knowledge types.
 ## Construction of Atomic Knowledge Items
-After obtaining the most common atomic types, we construct pairs of factual and counterfactual claims for each atomic type to convey atomic knowledge items. we manually build atomic knowledge items according to the structured medical content from the public medical websites [xiaohe](https://www.xiaohe.cn/medical) [120ask](https://www.120ask.com/.disease/)
+After obtaining the most common atomic types, we construct pairs of factual and counterfactual claims for each atomic type to convey atomic knowledge items. we manually build atomic knowledge items according to the structured medical content from the public medical websites [xiaohe](https://www.xiaohe.cn/medical) [120ask](https://www.120ask.com/.disease/).
 ## Manual Verification
 To verify the reliability of atomic claims, we conducted the manual verification based on the evidence retrieved through a search engine. We
 first randomly selected 50 factual claims for each atomic type. Then, we follow the [previous work](https://arxiv.org/abs/2307.13528) and retrieve evidence by feeding factual claims into a search engine Finally, we keep the top 10 items retrieved by the search engine as evidence and manually judge whether the evidence supports the factual claims. 
@@ -44,3 +44,20 @@ We design a comprehensive evaluation metric. It comprises three cascading indica
     
 
 Please refer to [tech report](https://arxiv.org/abs/2310.11722) for more analysis results.
+
+# Data Format of Benchmark
+Each knowledge item consists of a pair of factual and counterfactual claims and the data format is as follows. 
+
+    {"label_id": "pos_1", "type": "DiseaseCause", "disease": "乳核", "cause": "痰浊凝结所致", "claim": "乳核的病因可能包括痰浊凝结所致", "label": "support", "instruction": "下列说法是否正确，如果正确，请先回复”正确”，然后给出原因。如果错误，请先回复“错误”，然后给出原因。\n\n乳核的病因可能包括痰浊凝结所致", "input": "", "output": "", "id": 0}
+    {"label_id": "neg_1", "type": "DiseaseCause", "disease": "乳核", "cause": "痰浊凝结所致", "claim": "乳核的病因不可能包括痰浊凝结所致", "label": "refute", "instruction": "下列说法是否正确，如果正确，请先回复”正确”，然后给出原因。如果错误，请先回复“错误”，然后给出原因。\n\n乳核的病因不可能包括痰浊凝结所致", "input": "", "output": "", "id": 1}
+
+$label\_id = pos\_i$ indicates the claim is factual and $label\_id = neg\_i$ indicates the claim is counterfactual.
+
+type means the type of the atomic knowledge item.
+
+# Run
+    # generate results
+    cd code
+    sbatch run.sh
+    # evaluation 
+    python evaluate.py
