@@ -68,4 +68,17 @@ If you have any questions, please feel free to [contact](https://yxfan.top) me.
 # 😀Acknowledgement
 Our code is modified on [CMB](https://github.com/FreedomIntelligence/CMB), thanks for their amazing contribution!!!
 
+# Citation
+```
+@misc{fan2023quantifying,
+      title={Quantifying Self-diagnostic Atomic Knowledge in Chinese Medical Foundation Model: A Computational Analysis}, 
+      author={Yaxin Fan and Feng Jiang and Benyou Wang and Peifeng Li and Haizhou Li},
+      year={2023},
+      eprint={2310.11722},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+```
+We are from the School of Data Science, the Chinese University of Hong Kong, Shenzhen (CUHKSZ), and the Shenzhen Research Institute of Big Data (SRIBD).
 
+The first author is a visiting student from Soochow University, and we welcome aspiring individuals to join our group and contribute to the new era of LLM.
