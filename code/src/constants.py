@@ -18,10 +18,11 @@ from workers.baichuanchat import BaichuanChatWorker
 from workers.baichuan2chat import Baichuan2ChatWorker
 from workers.chatgpt import ChatGPTWorker
 from workers.gpt4 import GPT4Worker
+from workers.huatuo2 import Huatuo2Worker
 
 
 id2worker_class = {
-    # 'huatuo': HuatuoWorker,
+    'huatuo2': Huatuo2Worker,
     'huatuo-chat': HuatuoChatWorker,
     'huatuo-2': HuatuoChatWorker,
     'huatuo-alpaca-only':HuatuoChatWorker,

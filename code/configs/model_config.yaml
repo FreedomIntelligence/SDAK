@@ -13,6 +13,21 @@ huatuo-chat: # the public version on HF
         top_p: 0.85
         repetition_penalty: 1.05
 
+huatuo2-chat: #
+    model_id: "huatuo2"
+    load:
+        config_dir: "path" # 
+        device: 'cuda'        
+        precision: 'fp16'
+    generation_config: 
+        max_new_tokens: 128     
+        min_new_tokens: 1          
+        do_sample: True
+        temperature: 0.5
+        top_k: 5
+        top_p: 0.85
+        repetition_penalty: 1.05
+
 doctorglm:
     model_id: 'doctorglm'
     load:
